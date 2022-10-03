@@ -1,6 +1,6 @@
 import React from "react";
 
-function Header() {
+export function Header() {
   return (
     <nav className="bg-dark navbar-dark navbar">
       <div className="row col-12 d-flex">
