@@ -11,6 +11,14 @@ function App() {
         email="josueleite@outlook.com"
         payDay={25}
       />
+      <CreateUserPage
+        id={2}
+        fullName="Paloma Moreira"
+        cpf="006.008.116-78"
+        whatsapp="11 991990032"
+        email="palomamoreira@gmail.com"
+        payDay={12}
+      />
     </div>
   );
 }

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-// import { PaperClipIcon } from "@heroicons/react/20/solid";
+
 class client extends React.Component {
   render([id, fullName, cpf, whatsapp, email, payDay]) {
     (Props.id = id),
@@ -14,15 +14,39 @@ class client extends React.Component {
 export default function CreateUserPage(Props) {
   //   const [newUser, setNewUser] = useState;
   //   const user = new client(Props);
-  console.log(Props);
+
   return (
     <div>
-      <h1>{Props.fullName}</h1>
-      <h4>{Props.id}</h4>
-      <h4>{Props.cpf}</h4>
-      <h4>{Props.whatsapp}</h4>
-      <h4>{Props.email}</h4>
-      <h4>{Props.payDay}</h4>
+      <div>
+        <div>
+          <h3>Cadastro de Usuário</h3>
+          <p>Dados Pessoais</p>
+        </div>
+        <div>
+          <dl>
+            <div>
+              <dt>Full name</dt>
+              <dd>{Props.fullName}</dd>
+            </div>
+            <div>
+              <dt>CPF:</dt>
+              <dd>{Props.cpf}</dd>
+            </div>
+            <div>
+              <dt>Endereço de E-mail</dt>
+              <dd>{Props.email}</dd>
+            </div>
+            <div>
+              <dt>Número de telefone/ WhatsApp</dt>
+              <dd>{Props.whatsapp}</dd>
+            </div>
+            <div>
+              <dt>Dia de vencimento</dt>
+              <dd>{Props.payDay}</dd>
+            </div>
+          </dl>
+        </div>
+      </div>
     </div>
   );
 }
