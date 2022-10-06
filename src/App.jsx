@@ -1,8 +1,11 @@
 import CreateUserPage from "./components/User";
+import { Header } from "./components/Header";
+import "./global.css";
 
 function App() {
   return (
     <div className="text-3xl font-bold underline">
+      <Header />
       <CreateUserPage
         id={1}
         fullName="Josué Leite"

@@ -1,11 +1,14 @@
 import React from "react";
+import styles from "./Header.module.css";
 
 export function Header() {
   return (
-    <nav className="bg-dark navbar-dark navbar">
-      <div className="row col-12 d-flex">
-        <h3>Registro de Usuário</h3>
+    <header className={styles.header}>
+      <div>
+        <strong>
+          <h2>Registro de Usuário</h2>
+        </strong>
       </div>
-    </nav>
+    </header>
   );
 }
