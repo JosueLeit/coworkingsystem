@@ -1,41 +1,42 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import App from "./App";
+import Root from "./routes/root";
 
-import {
-  createBrowserRouter,
-  Switch,
-  RouterProvider,
-  Route,
-} from "react-router-dom";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import "./global.css";
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <div>Hello BrowserRouter</div>,
+    element: (
+      <Root>
+        <App />
+      </Root>
+    ),
   },
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <RouterProvider router={router} />
-    <Route exact path="/" component={App} />
-    <Route exact path="/about" component={About} />
-    {/* <App /> */}
   </React.StrictMode>
 );
 
-// import About from "./components/views/About";
-// import Home from "./components/views/Home";
-// import Layout from "./components/views/Layout";
+// export default Routes;
 
-const Routes = () => (
-  <BrowserRouter>
-    <Layout>
-      <Switch></Switch>
-    </Layout>
-  </BrowserRouter>
-);
+// const router = createBrowserRouter([
+//   {
+//     path: "/",
+//     element: <div>Hello BrowserRouter</div>,
+//   },
+// ]);
 
-export default Routes;
+// ReactDOM.createRoot(document.getElementById("root")).render(
+//   <React.StrictMode>
+//     <RouterProvider router={router} />
+//     <Route exact path="/" component={App} />
+//     <Route exact path="/about" component={About} />
+//     {/* <App /> */}
+//   </React.StrictMode>
+// );
