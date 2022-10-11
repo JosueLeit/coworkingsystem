@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import styles from "./User.module.css";
 
 class client extends React.Component {
   render([id, fullName, cpf, whatsapp, email, payDay]) {
@@ -17,31 +18,41 @@ export default function CreateUserPage(Props) {
 
   return (
     <div>
-      <div>
-        <div>
+      <div className={styles.clientBox}>
+        <div className={styles.clientBoxHeader}>
           <h3>Cadastro de Usuário</h3>
-          <p>Dados Pessoais</p>
+          <strong>Dados Pessoais</strong>
         </div>
         <div>
           <dl>
             <div>
-              <dt>Full name</dt>
+              <dt>
+                <strong>Full name</strong>
+              </dt>
               <dd>{Props.fullName}</dd>
             </div>
             <div>
-              <dt>CPF:</dt>
+              <dt>
+                <strong>CPF:</strong>
+              </dt>
               <dd>{Props.cpf}</dd>
             </div>
             <div>
-              <dt>Endereço de E-mail</dt>
+              <dt>
+                <strong>E-mail</strong>
+              </dt>
               <dd>{Props.email}</dd>
             </div>
             <div>
-              <dt>Número de telefone/ WhatsApp</dt>
+              <dt>
+                <strong></strong>Número de telefone/ WhatsApp
+              </dt>
               <dd>{Props.whatsapp}</dd>
             </div>
             <div>
-              <dt>Dia de vencimento</dt>
+              <dt>
+                <strong></strong>Dia de vencimento
+              </dt>
               <dd>{Props.payDay}</dd>
             </div>
           </dl>

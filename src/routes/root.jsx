@@ -1,14 +1,16 @@
+import App from "../App";
+
 export default function Root() {
   return (
     <>
       <div id="sidebar">
-        <h1>React Router Contacts</h1>
+        <h1>Coworking Business Services</h1>
         <div>
           <form id="search-form" role="search">
             <input
               id="q"
               aria-label="Search contacts"
-              placeholder="Search"
+              placeholder="Pesquisa"
               type="search"
               name="q"
             />
@@ -16,7 +18,7 @@ export default function Root() {
             <div className="sr-only" aria-live="polite"></div>
           </form>
           <form method="post">
-            <button type="submit">New</button>
+            <button type="submit">Novo</button>
           </form>
         </div>
         <nav>
@@ -30,7 +32,9 @@ export default function Root() {
           </ul>
         </nav>
       </div>
-      <div id="detail"></div>
+      <div id="detail">
+        <App />
+      </div>
     </>
   );
 }

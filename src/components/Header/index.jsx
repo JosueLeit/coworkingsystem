@@ -6,7 +6,7 @@ export function Header() {
     <header className={styles.header}>
       <div>
         <strong>
-          <h2>Registro de Usuário</h2>
+          <h2>Registro de Usuários</h2>
         </strong>
       </div>
     </header>
