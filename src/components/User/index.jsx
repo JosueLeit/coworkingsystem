@@ -21,39 +21,39 @@ export default function CreateUserPage(Props) {
       <div className={styles.clientBox}>
         <div className={styles.clientBoxHeader}>
           <h3>Cadastro de Usuário</h3>
-          <strong>Dados Pessoais</strong>
+          <strong>Dados Pessoais: </strong>
         </div>
         <div>
           <dl>
             <div>
               <dt>
-                <strong>Full name</strong>
+                <strong>Full name: </strong>
+                {Props.fullName}
               </dt>
-              <dd>{Props.fullName}</dd>
             </div>
             <div>
               <dt>
-                <strong>CPF:</strong>
+                <strong>CPF: </strong>
+                {Props.cpf}
               </dt>
-              <dd>{Props.cpf}</dd>
             </div>
             <div>
               <dt>
-                <strong>E-mail</strong>
+                <strong>E-mail: </strong>
+                {Props.email}
               </dt>
-              <dd>{Props.email}</dd>
             </div>
             <div>
               <dt>
-                <strong></strong>Número de telefone/ WhatsApp
+                <strong>Telefone/ WhatsApp: </strong>
+                {Props.whatsapp}
               </dt>
-              <dd>{Props.whatsapp}</dd>
             </div>
             <div>
               <dt>
-                <strong></strong>Dia de vencimento
+                <strong>Data de cobrança: </strong>
+                {Props.payDay}
               </dt>
-              <dd>{Props.payDay}</dd>
             </div>
           </dl>
         </div>
