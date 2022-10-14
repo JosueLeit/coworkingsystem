@@ -1,16 +1,17 @@
 .container {
   max-width: 70rem;
-  /* margin: 2rem auto; */
+  margin: 0.5rem;
+  /* margin-bottom: 0.8rem; */
   /* padding: 0 1rem; */
 
   display: grid;
   grid-template-columns: 20rem 1fr;
-  gap: 2rem;
+  gap: 3rem;
   align-items: flex-start;
 }
 
 .main {
-  display: flex;
+  display: grid;
   justify-content: center;
   /* align-items: center; */
 }

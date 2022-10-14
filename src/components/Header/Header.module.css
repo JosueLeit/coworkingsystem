@@ -1,8 +1,8 @@
 .header {
   background: #778895;
   color: var(--gray-100);
-  display: flex;
+  display: grid;
   justify-content: center;
   padding: 1.25rem;
-  border-radius: 0.8rem;
+  border-radius: 1.375rem 7.25rem;
 }
