@@ -24,10 +24,10 @@ export default function Root() {
         <nav>
           <ul>
             <li>
-              <a href={`contacts/1`}>Clientes</a>
+              <a href={`contacts/10`}>Clientes</a>
             </li>
             <li>
-              <a href={`contacts/2`}>Faturamento</a>
+              <a href={`contacts/20`}>Faturamento</a>
             </li>
           </ul>
         </nav>
