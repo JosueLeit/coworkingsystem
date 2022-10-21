@@ -1,9 +1,9 @@
 import React from "react";
-import styles from "./Header.module.css";
+import { Container } from "./styles";
 
 export function Header() {
   return (
-    <header className={styles.header}>
+    <Container>
       <div>
         <strong>
           <h2>Registro de Usuários</h2>
@@ -22,6 +22,6 @@ export function Header() {
           </p>
         </strong>
       </div>
-    </header>
+    </Container>
   );
 }
